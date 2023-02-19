@@ -1,0 +1,440 @@
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+}
+
+.main {
+    padding: 35px 110px 35px 50px 
+}
+
+.content {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(230px, auto)
+}
+
+.content__item {
+    border-radius: 20px;
+    padding: 20px 25px 10px 25px;
+    background-color: #383e57;
+    box-shadow: 10px 10px 10px rgba(56, 62, 87, 0.750);
+    position: relative;
+}
+
+.col2 {
+    grid-column: span 2 / auto;
+}
+
+.col4 {
+    grid-column: span 4 / auto;
+}
+
+.col3 {
+    grid-column: span 3 / auto;
+}
+
+.content__itemTitle {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.content__itemSubtitle {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.imageGroup {
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    width: 180px;
+}
+
+.imageMap {
+    position: absolute;
+    width: 270px;
+    right: 25px;
+    bottom: 20px
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+}
+
+.weatherWrapper, .pressureWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 15px
+}
+
+.weather {
+    font-size: 76px;
+    font-weight: 300;
+    position: relative;
+    padding-right: 50px
+}
+
+.weather span {
+    font-size: 36px;
+    position: absolute;
+    top: 15px
+}
+
+.pressureWrapper {
+    padding-right: 50px;
+    margin-top: 14px;
+    opacity: 50%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.imageGraph {
+    bottom: 10px;
+    position: relative;
+    width: 150px
+}
+
+.tableWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.table {
+    height: 140px;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+.table th {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.tBodyBorder {
+    border-top: 1px solid #151e41;
+    border-right: 1px solid #151e41;
+}
+
+.tHead {
+    padding-bottom: 7px;
+}
+
+.tBodyWithoutBorder {
+    border-top: 1px solid #151e41;
+}
+
+.staffWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 17px;
+}
+
+.staff {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.staff p {
+    opacity: 50%;
+}
+
+.staffIcon {
+    fill: #fff;
+    margin-left: 20px;
+}
+
+.staffIcon:hover {
+    fill: #43e8ff;
+}
+
+.btnWrapper {
+    margin-top: 37px;
+}
+
+.btnBlueColor {
+    background-color: transparent ;
+    border: none;
+    padding: 0;
+    color: #fff;
+}
+
+.btnBlueColor:hover {
+    cursor: pointer;
+    color: #43e8ff;
+}
+
+.titleWrapper, .statistikWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrowIcon {
+    position: absolute;
+    fill: #fff;
+    top: 30px;
+    right: 25px;
+    pointer-events: none;
+}
+
+.buttonWrapper .btnBlueColor {
+    padding-right: 25px;
+}
+
+.buttonWrapper .btnBlueColor:hover + .arrowIcon {
+    cursor: pointer;
+    fill: #43e8ff;
+}
+
+.statistic__title  {
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.statistic__iconBefore {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.statistic__title p {
+    opacity: 50%;
+    font-weight: 400;
+}
+
+.statistic__iconBefore::before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 30%;
+    background: -webkit-linear-gradient(135deg, #44e9ff,#00d4b6,#01abab);
+    background: linear-gradient(135deg, #44e9ff,#00d4b6,#01abab);
+}
+
+.violet::before {
+    background: -webkit-linear-gradient(135deg, #7a43ff,#5e42ff,#01abab);
+    background: linear-gradient(135deg, #4143ff,#5e42ff,#4143ff);
+}
+
+.circleGraph {
+    margin-right: 40px;
+    height: 220px;
+}
+
+.frame {
+    height: 250px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.star {
+    position: absolute;
+    top: 11px;
+    left: -7px;
+}
+
+.frame::before {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 165px;
+    background-color: #000000;
+    left: 0;
+    top: 70px;
+}
+
+.frame::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 165px;
+    background-color: #000000;
+    right: 0;
+    top: 70px;
+}
+
+.frameLine::after {
+    content: "";
+    position: absolute;
+    width: 0.8px;
+    height: 175px;
+    background-color: #000000;
+    right: 140px;
+    top: 70px;
+}
+
+.frameLine::before {
+    content: "";
+    position: absolute;
+    width: 290px;
+    height: 1.5px;
+    background-color: #000000;
+    right: -5px;
+    bottom: 25px;
+}
+
+.statistic__subTitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 25px;
+}
+
+
+/*..........................MEDIA..........................*/
+
+
+@media (max-width: 1470px) {
+    .content {
+        padding-top: 30px;
+        display: block;
+    }
+
+    .content__item {
+        min-height: 230px;
+        margin-bottom: 20px;
+    }
+
+    .imageGroup { 
+        right: 25px;
+        top: 60px;
+        width: 180px;
+    }
+    
+    .imageMap {
+        width: 300px;
+        right: 25px;
+        bottom: 40px
+    }
+
+    .imageGraph {
+        bottom: 10px;
+        width: 170px;
+        margin-left: 5px;
+    }
+
+} 
+
+@media (max-width: 1000px) {
+    .main {
+        padding: 10px 
+    }
+}
+
+@media (max-width: 680px) {   
+    .imageGraph {
+        bottom: 10px;
+        width: 100px;
+        margin-left: 5px;
+    }
+    
+    .frame {
+        height: 170px;
+        right: 20px;
+        bottom: 10px;
+    }
+
+    .frame::before {
+        height: 115px;
+        left: 0;
+        top: 40px;
+    }
+    
+    .frame::after {
+        height: 115px;
+        right: 0;
+        top: 40px;
+    }
+    
+    .frameLine::after {
+        height: 125px;
+        right: 95px;
+        top: 40px;
+    }
+    
+    .frameLine::before {
+        width: 201px;;
+        right: -5px;
+        bottom: 25px;
+    }
+    
+    .circleGraph {
+        margin-right: 5px;
+        height: 100px;    
+    }
+
+    .statistikWrapper {
+        align-items: center
+    }
+
+    .content__itemSubtitle, .staff, .content__itemTitle {
+        font-size: 12px;
+    }
+
+    .statistic__title, .table th {
+        font-size: 10px;
+    }
+} 
+
+@media (max-width: 520px) { 
+    .imageMap {
+        width: 240px;
+        right: 25px;
+        bottom: 40px
+    }
+
+    .weather {
+        font-size: 50px;
+    }
+
+    .weather span {
+        font-size: 20px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 400px) { 
+    .statistikWrapper {
+        justify-content: center;
+    } 
+    
+    .circleGraph, .frame, .imageGraph  {
+        display: none;  
+    }
+}

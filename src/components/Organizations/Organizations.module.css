@@ -1,0 +1,170 @@
+.organizations {
+    padding: 35px 110px 35px 50px 
+}
+
+.header__input {
+    margin-right: 25px;
+    position: relative;
+}
+
+.header__input input {
+    width: 450px;
+    background-color: #3E4459;
+    border: none;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inputSVG {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    pointer-events: none;
+}
+
+.content {
+    border-radius: 20px;
+    padding: 10px 5px 10px 10px;
+    background-color: #383e57;
+    box-shadow: 10px 10px 10px rgba(56, 62, 87, 0.750);
+    color: #fff;
+    position: relative;
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tHead1 {
+    width: 25%
+}
+
+.tHead2 {
+    width: 10%
+}
+
+.tHead3 {
+    width: 20%
+}
+
+.tHead4 {
+    width: 41%
+}
+
+.tHead5 {
+    width: 4%
+}
+
+.tBodyBorder {
+    border-top: 1px solid #151e41;
+    border-right: 1px solid #151e41;
+}
+
+.tBodyWithoutBorder {
+    border-top: 1px solid #151e41;
+}
+
+.table th {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    padding: 12px 10px;
+}
+
+.tbodyWrapper {       
+    padding-right: 10px;
+    max-height: 550px;
+    overflow-y: auto;
+    scroll-snap-type: mandatory;
+}
+
+.tbodyWrapper::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+  
+.tbodyWrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #23273A;
+    border: 2px solid #3E4459;
+    
+}
+  
+.tbodyWrapper::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.tbodyWrapper::-webkit-scrollbar-track-piece:start {
+    background: #3E4459;
+    margin-top: 39px;
+    border-radius: 10px;
+    
+}
+
+.tbodyWrapper::-webkit-scrollbar-track-piece:end {
+    background: #3E4459;
+    border-radius: 10px;
+}
+
+.tbody th {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    padding: 12px 10px;
+    color: #A1A6BE;
+}
+
+.thWrapper img {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.tableSVG {
+    fill: #fff;
+}
+
+.tableSVG:hover {
+    cursor: pointer;
+    fill: #43e8ff;
+}
+
+
+/*..........................MEDIA..........................*/
+
+
+@media (max-width: 1220px) { 
+    .header__input {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1000px) { 
+    .organizations {
+        padding: 10px;
+    }
+
+    .tbodyWrapper::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+    }
+
+    .tbodyWrapper::-webkit-scrollbar-thumb {
+        background-color: #fff;        
+    }
+}
+
+@media (max-width: 520px) { 
+    .header__input input {
+        width: 270px;
+    }
+}
